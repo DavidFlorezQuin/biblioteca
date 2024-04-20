@@ -1,0 +1,22 @@
+.navbar-container{
+    background-color: #17a2b8;
+}
+
+.container-li{
+    list-style-type: none;
+    display: flex;
+    padding: 1%;
+}
+
+
+.container-li li a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform 0.3s; /* Agregar transición para animación suave */
+}
+
+.container-li li a:hover { /* Agregar estilo para cuando se hace clic o se pasa el mouse */
+    transform: scale(1.1); /* Hacer que el enlace se agrande en un 10% */
+}

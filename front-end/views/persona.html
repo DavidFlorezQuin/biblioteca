@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Persona</title>
+    <link rel='stylesheet' type='text/css' media='screen'>
+
+    <!-- Librerias -->
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/litera/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+<body>
+    <div class="container m-5 mx-auto">
+        <div id="inputData">
+
+            
+            <form id="fomulario">
+                <fieldset>
+                    <legend class="my-5 fs-1 bg-info px-4 text-white rounded-4">Registro Persona</legend>
+                  
+                    <div class="row d-flex">
+
+                      <div class="form-group col-6">                  
+                        <label class="col-sm-2 col-form-label">Nombre</label>
+                            <input type="hidden" name="id" id="id" value="">
+                            <input type="text" class="form-control" name="first_name" id="first_name" 
+                                placeholder="Ingresar nombre">
+                        </div>
+
+                      <div class="form-group col-6">                 
+                        <label class="col-form-label">Apellido</label>
+                            <input type="text" class="form-control" name="last_name" id="last_name" 
+                                placeholder="Ingresar apellido">
+                        </div>
+
+                      <div class="form-group col-6">                 
+                        <label class="col-form-label">Correo</label>
+                            <input type="text" class="form-control" name="email" id="email"
+                                placeholder="Ingresar correo">
+                        </div>
+
+                      <div class="form-group col-6">                 
+                        <label class="col-form-label">Teléfono</label>
+                            </br>
+                            <input type="text" class="form-control" name="phone" id="phone" 
+                                placeholder="Ingresar telefono">
+                        </div>
+
+                      <div class="form-group col-6">                 
+                        <label class="col-form-label">Documento</label>
+                            </br>
+                            <input type="text" class="form-control" name="nit" id="nit" 
+                                placeholder="Ingresar Documento">
+                        </div>
+                    </div>
+                </fieldset>
+                <button onclick="save()" name="btnAgregar" class="btn btn-info my-5 submit" data-bs-dismiss="modal">Agregar</button>
+
+            </form>
+        </div>
+        <div id="outputData">           
+        </br>
+            <table class="table table-hover shadow-lg">
+                <thead>
+                    <tr class="table-info">
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                        <th>Documento</th>
+                        <th colspan="2">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="resultData">
+                     <!-- Aquí llegan los datos de la bd -->                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="../js/persona.js"></script>
+</html>
